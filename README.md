@@ -1,8 +1,8 @@
 ## RunUO - Ultima Online Server Emulator
 [![GitHub Label](https://img.shields.io/badge/RunUO-2.3-blue)](https://img.shields.io/badge/RunUO-2.3-blue)
-[![GitHub license](https://img.shields.io/github/license/bohica89/RunUO-2.3?color=blue)](https://github.com/bohica89/RunUO-2.3/blob/main/License)
-[![GitHub stars](https://img.shields.io/github/stars/bohica89/RunUO-2.3?logo=github&style=flat)](https://github.com/bohica89/RunUO-2.3/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/bohica89/RunUO-2.3?logo=github)](https://github.com/bohica89/RunUO-2.3/issues)
+[![GitHub license](https://img.shields.io/github/license/bohicatv/RunUO-2.3?color=blue)](https://github.com/bohicatv/RunUO-2.3/blob/main/License)
+[![GitHub stars](https://img.shields.io/github/stars/bohicatv/RunUO-2.3?logo=github&style=flat)](https://github.com/bohicatv/RunUO-2.3/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/bohicatv/RunUO-2.3?logo=github)](https://github.com/bohicatv/RunUO-2.3/issues)
 
 ## Introduction
 
