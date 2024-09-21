@@ -4,7 +4,7 @@
    </head>
    <body bgcolor="white" style="font-family: Courier New" text="#000000" link="#000000" vlink="#000000" alink="#808080">
       <h4><a href="../namespaces/Server.Accounting.html">Back to Server.Accounting</a></h4>
-      <h2>Account : <!-- DBG-2.2 --><a href="IAccount.html">IAccount</a>, <!-- DBG-2.1 --><font color="blue">IComparable</font>, <!-- DBG-2.1 --><font color="blue">IComparable</font>&lt;<a href="Account.html">Account</a>&gt;</h2>
+      <h2>Account : <!-- DBG-2.2 --><a href="IAccount.html">IAccount</a>, <!-- DBG-2.1 --><font color="blue">IComparable</font>&lt;<a href="IAccount.html">IAccount</a>&gt;, <!-- DBG-2.1 --><font color="blue">IComparable</font>, <!-- DBG-2.1 --><font color="blue">IComparable</font>&lt;<a href="Account.html">Account</a>&gt;</h2>
 <h4>Nested Types: <!-- DBG-4 --><a href="YoungTimer.html">YoungTimer</a></h4>
       (<font color="blue">static</font>) <font color="blue">void</font> EventSink_Connected( <!-- DBG-0 --><a href="ConnectedEventArgs.html">ConnectedEventArgs</a> e )<br>
       (<font color="blue">static</font>) <font color="blue">void</font> EventSink_Disconnected( <!-- DBG-0 --><a href="DisconnectedEventArgs.html">DisconnectedEventArgs</a> e )<br>
@@ -46,15 +46,16 @@
       <font color="blue">virtual</font> <font color="blue">bool</font> CheckPassword( <font color="blue">string</font> plainPassword )<br>
       <font color="blue">void</font> CheckYoung()<br>
       <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <!-- DBG-0 --><a href="Account.html">Account</a> other )<br>
+      <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <!-- DBG-0 --><a href="IAccount.html">IAccount</a> other )<br>
       <font color="blue">virtual</font> <font color="blue">int</font> CompareTo( <font color="blue">object</font> obj )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> Delete()<br>
       <font color="blue">bool</font> GetBanTags( <font color="blue">out</font> DateTime banTime, <font color="blue">out</font> TimeSpan banDuration )<br>
       <font color="blue">bool</font> GetFlag( <font color="blue">int</font> index )<br>
       <font color="blue">string</font> GetTag( <font color="blue">string</font> name )<br>
-      <font color="blue">bool</font> HasAccess( IPAddress ipAddress )<br>
       <font color="blue">bool</font> HasAccess( <!-- DBG-0 --><a href="NetState.html">NetState</a> ns )<br>
-      <font color="blue">void</font> LogAccess( IPAddress ipAddress )<br>
+      <font color="blue">bool</font> HasAccess( IPAddress ipAddress )<br>
       <font color="blue">void</font> LogAccess( <!-- DBG-0 --><a href="NetState.html">NetState</a> ns )<br>
+      <font color="blue">void</font> LogAccess( IPAddress ipAddress )<br>
       <font color="blue">void</font> RemoveTag( <font color="blue">string</font> name )<br>
       <font color="blue">void</font> RemoveYoungStatus( <font color="blue">int</font> message )<br>
       <font color="blue">void</font> Save( XmlTextWriter xml )<br>

@@ -12,15 +12,15 @@
       <!-- DBG-0 --><a href="StatueMaterial.html">StatueMaterial</a> Material( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="CharacterStatuePlinth.html">CharacterStatuePlinth</a> Plinth( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="StatuePose.html">StatuePose</a> Pose( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
-      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> SculptedBy( <font color="blue">get</font>; )<br>
-      DateTime SculptedOn( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> SculptedBy( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime SculptedOn( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="StatueType.html">StatueType</a> StatueType( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> CanBeDamaged()<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> CanBeRenamedBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">void</font> CloneBody( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">void</font> CloneClothes( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <!-- DBG-0 --><a href="Item.html">Item</a> CloneItem( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
-      <font color="blue">void</font> Demolish( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> by )<br>
+      <font color="blue">bool</font> Demolish( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> by )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> GetContextMenuEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">List</font>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>

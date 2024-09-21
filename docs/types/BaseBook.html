@@ -11,12 +11,14 @@
       (<font color="blue">static</font>) <font color="blue">void</font> HeaderChange( <!-- DBG-0 --><a href="NetState.html">NetState</a> state, <!-- DBG-0 --><a href="PacketReader.html">PacketReader</a> pvSrc )<br>
       (<font color="blue">static</font>) <font color="blue">void</font> Initialize()<br>
       (<font color="blue">static</font>) <font color="blue">void</font> OldHeaderChange( <!-- DBG-0 --><a href="NetState.html">NetState</a> state, <!-- DBG-0 --><a href="PacketReader.html">PacketReader</a> pvSrc )<br>
-      (<font color="blue">ctor</font>) BaseBook( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
       (<font color="blue">ctor</font>) BaseBook( <font color="blue">int</font> itemID )<br>
+      (<font color="blue">ctor</font>) BaseBook( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
       (<font color="blue">ctor</font>) BaseBook( <font color="blue">int</font> itemID, <font color="blue">bool</font> writable )<br>
       (<font color="blue">ctor</font>) BaseBook( <font color="blue">int</font> itemID, <font color="blue">int</font> pageCount, <font color="blue">bool</font> writable )<br>
       (<font color="blue">ctor</font>) BaseBook( <font color="blue">int</font> itemID, <font color="blue">string</font> title, <font color="blue">string</font> author, <font color="blue">int</font> pageCount, <font color="blue">bool</font> writable )<br>
       <font color="blue">string</font> Author( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">string</font> ContentAsString( <font color="blue">get</font>; )<br>
+      <font color="blue">string</font>[] ContentAsStringArray( <font color="blue">get</font>; )<br>
       <!-- DBG-0 --><a href="BookContent.html">BookContent</a> DefaultContent( <font color="blue">get</font>; )<br>
       <!-- DBG-0 --><a href="SecureLevel.html">SecureLevel</a> Level( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="BookPageInfo.html">BookPageInfo</a>[] Pages( <font color="blue">get</font>; )<br>

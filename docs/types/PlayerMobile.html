@@ -43,7 +43,10 @@
       TimeSpan DisguiseTimeLeft( <font color="blue">get</font>; )<br>
       <font color="blue">bool</font> DisplayChampionTitle( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">List</font>&lt;<a href="QuestRestartInfo.html">QuestRestartInfo</a>&gt; DoneQuests( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <!-- DBG-0 --><a href="DuelContext.html">DuelContext</a> DuelContext( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="DuelPlayer.html">DuelPlayer</a> DuelPlayer( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       Type EnemyOfOneType( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">List</font>&lt;<a href="Item.html">Item</a>&gt; EquipSnapshot( <font color="blue">get</font>; )<br>
       <!-- DBG-0 --><a href="Player.html">Player</a> EthicPlayer( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> ExecutesLightningStrike( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="PlayerState.html">PlayerState</a> FactionPlayerState( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
@@ -67,6 +70,7 @@
       DateTime LastHonorLoss( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       DateTime LastHonorUse( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       DateTime LastJusticeLoss( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime LastMoved( <font color="blue">get</font>; )<br>
       DateTime LastOnline( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       DateTime LastPetBallTime( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       DateTime LastSacrificeGain( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
@@ -108,6 +112,7 @@
       <font color="blue">bool</font> StoneMining( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> Str( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">bool</font> ToggleMiningStone( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">int</font> ToothAche( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> ToTItemsTurnedIn( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> ToTTotalMonsterFame( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">bool</font> UseOwnFilter( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
@@ -115,8 +120,8 @@
       <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; VisibilityList( <font color="blue">get</font>; )<br>
       <font color="blue">bool</font> WaitingForEnemy( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">bool</font> Young( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
-      <font color="blue">virtual</font> <font color="blue">void</font> AcquireRecipe( <!-- DBG-0 --><a href="Recipe.html">Recipe</a> r )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> AcquireRecipe( <font color="blue">int</font> recipeID )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> AcquireRecipe( <!-- DBG-0 --><a href="Recipe.html">Recipe</a> r )<br>
       <font color="blue">void</font> AddArmorRating( <font color="blue">ref</font> <font color="blue">double</font> rating, <!-- DBG-0 --><a href="Item.html">Item</a> armor )<br>
       <font color="blue">void</font> AddBuff( <!-- DBG-0 --><a href="BuffInfo.html">BuffInfo</a> b )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> AllowItemUse( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
@@ -168,8 +173,8 @@
       <font color="blue">virtual</font> <!-- DBG-0 --><a href="DeathMoveResult.html">DeathMoveResult</a> GetParentMoveResultFor( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
       <font color="blue">void</font> GetVendor()<br>
-      <font color="blue">virtual</font> <font color="blue">bool</font> HasRecipe( <!-- DBG-0 --><a href="Recipe.html">Recipe</a> r )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> HasRecipe( <font color="blue">int</font> recipeID )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> HasRecipe( <!-- DBG-0 --><a href="Recipe.html">Recipe</a> r )<br>
       <font color="blue">void</font> InternalChangeHair( <font color="blue">bool</font> hair, <font color="blue">int</font> id, <font color="blue">ref</font> <font color="blue">int</font> storeID, <font color="blue">ref</font> <font color="blue">int</font> storeHue )<br>
       <font color="blue">void</font> InternalRestoreHair( <font color="blue">bool</font> hair, <font color="blue">ref</font> <font color="blue">int</font> id, <font color="blue">ref</font> <font color="blue">int</font> hue )<br>
       <font color="blue">void</font> InvalidateMyRunUO()<br>
@@ -212,8 +217,8 @@
       <font color="blue">virtual</font> <font color="blue">void</font> OnWarmodeChanged()<br>
       <font color="blue">virtual</font> <font color="blue">void</font> RecheckTownProtection()<br>
       <font color="blue">void</font> RecoverAmmo()<br>
-      <font color="blue">void</font> RemoveBuff( <!-- DBG-0 --><a href="BuffInfo.html">BuffInfo</a> b )<br>
       <font color="blue">void</font> RemoveBuff( <!-- DBG-0 --><a href="BuffIcon.html">BuffIcon</a> b )<br>
+      <font color="blue">void</font> RemoveBuff( <!-- DBG-0 --><a href="BuffInfo.html">BuffInfo</a> b )<br>
       <font color="blue">void</font> ResendBuffs()<br>
       <font color="blue">void</font> ResetKillTime()<br>
       <font color="blue">virtual</font> <font color="blue">void</font> ResetRecipes()<br>

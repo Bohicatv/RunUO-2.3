@@ -12,7 +12,9 @@
       (<font color="blue">static</font>) <font color="blue">int</font> GetRandomExceptional()<br>
       (<font color="blue">static</font>) <font color="blue">int</font> GetRandomItemID()<br>
       (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> GetRandomKiller()<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> GetRandomKiller( <font color="blue">bool</font> includingNone )<br>
       (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> GetRandomProtection()<br>
+      (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> GetRandomProtection( <font color="blue">bool</font> includingNone )<br>
       (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanRemoval.html">TalismanRemoval</a> GetRandomRemoval()<br>
       (<font color="blue">static</font>) <!-- DBG-0 --><a href="SkillName.html">SkillName</a> GetRandomSkill()<br>
       (<font color="blue">static</font>) <!-- DBG-0 --><a href="TalismanSlayerName.html">TalismanSlayerName</a> GetRandomSlayer()<br>
@@ -32,7 +34,6 @@
       <font color="blue">int</font> ChargeTime( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> ExceptionalBonus( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">bool</font> ForceShowName( <font color="blue">get</font>; )<br>
-      <font color="blue">int</font> KarmaLoss( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> Killer( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> LabelNumber( <font color="blue">get</font>; )<br>
       <font color="blue">int</font> MaxCharges( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
@@ -45,7 +46,7 @@
       <font color="blue">int</font> SuccessBonus( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="TalismanAttribute.html">TalismanAttribute</a> Summoner( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> AddNameProperty( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
-      <font color="blue">virtual</font> <font color="blue">bool</font> CanEquip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
+      <font color="blue">virtual</font> <font color="blue">bool</font> CanEquip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br>
       <font color="blue">virtual</font> Type GetSummoner()<br>

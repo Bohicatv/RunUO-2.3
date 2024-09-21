@@ -7,6 +7,7 @@
       <h2>BaseHouse : <!-- DBG-1 --><a href="BaseMulti.html">BaseMulti</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><font color="blue">IComparable</font>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><font color="blue">IComparable</font>, <!-- DBG-2.1 --><font color="blue">IComparable</font>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
 <h4>Derived Types: <!-- DBG-3 --><a href="Castle.html">Castle</a>, <!-- DBG-3 --><a href="GuildHouse.html">GuildHouse</a>, <!-- DBG-3 --><a href="HouseFoundation.html">HouseFoundation</a>, <!-- DBG-3 --><a href="Keep.html">Keep</a>, <!-- DBG-3 --><a href="LargeMarbleHouse.html">LargeMarbleHouse</a>, <!-- DBG-3 --><a href="LargePatioHouse.html">LargePatioHouse</a>, <!-- DBG-3 --><a href="LogCabin.html">LogCabin</a>, <!-- DBG-3 --><a href="SandStonePatio.html">SandStonePatio</a>, <!-- DBG-3 --><a href="SmallOldHouse.html">SmallOldHouse</a>, <!-- DBG-3 --><a href="SmallShop.html">SmallShop</a>, <!-- DBG-3 --><a href="SmallTower.html">SmallTower</a>, <!-- DBG-3 --><a href="Tower.html">Tower</a>, <!-- DBG-3 --><a href="TwoStoryHouse.html">TwoStoryHouse</a>, <!-- DBG-3 --><a href="TwoStoryVilla.html">TwoStoryVilla</a></h4>
 <h4>Nested Types: <!-- DBG-4 --><a href="FixColumnTimer.html">FixColumnTimer</a>, <!-- DBG-4 --><a href="TransferItem.html">TransferItem</a></h4>
+      (<font color="blue">static</font>) <font color="blue">List</font>&lt;<a href="BaseHouse.html">BaseHouse</a>&gt; AllHouses( <font color="blue">get</font>; )<br>
       (<font color="blue">static</font>) <font color="blue">int</font> MaxBans( <font color="blue">get</font>; )<br>
       (<font color="blue">static</font>) <font color="blue">int</font> MaxFriends( <font color="blue">get</font>; )<br>
       (<font color="blue">static</font>) <font color="blue">bool</font> NewVendorSystem( <font color="blue">get</font>; )<br>
@@ -48,6 +49,7 @@
       <font color="blue">int</font> DefaultPrice( <font color="blue">get</font>; )<br>
       ArrayList Doors( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       ArrayList Friends( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      <font color="blue">bool</font> HasAddonContainers( <font color="blue">get</font>; )<br>
       <font color="blue">bool</font> HasPersonalVendors( <font color="blue">get</font>; )<br>
       <font color="blue">bool</font> HasRentedVendors( <font color="blue">get</font>; )<br>
       ArrayList InternalizedVendors( <font color="blue">get</font>; )<br>
@@ -60,6 +62,7 @@
       <font color="blue">int</font> MaxLockDowns( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">int</font> MaxSecures( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="MovingCrate.html">MovingCrate</a> MovingCrate( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
+      DateTime NextDecayStage( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Owner( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       ArrayList PlayerBarkeepers( <font color="blue">get</font>; )<br>
       ArrayList PlayerVendors( <font color="blue">get</font>; )<br>
@@ -90,8 +93,8 @@
       <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a> AddSouthDoor( <font color="blue">bool</font> wood, <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <font color="blue">uint</font> k )<br>
       <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a>[] AddSouthDoors( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z )<br>
       <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a>[] AddSouthDoors( <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <font color="blue">uint</font> k )<br>
-      <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a>[] AddSouthDoors( <font color="blue">bool</font> wood, <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <font color="blue">bool</font> inv )<br>
       <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a>[] AddSouthDoors( <font color="blue">bool</font> wood, <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <font color="blue">uint</font> k )<br>
+      <!-- DBG-0 --><a href="BaseDoor.html">BaseDoor</a>[] AddSouthDoors( <font color="blue">bool</font> wood, <font color="blue">int</font> x, <font color="blue">int</font> y, <font color="blue">int</font> z, <font color="blue">bool</font> inv )<br>
       <font color="blue">void</font> AddStrongBox( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">void</font> AddTrashBarrel( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">bool</font> AreThereAvailableVendorsFor( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
@@ -103,7 +106,6 @@
       <font color="blue">void</font> ChangeLocks( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> ChangeSignType( <font color="blue">int</font> itemID )<br>
       <font color="blue">bool</font> CheckAccessibility( <!-- DBG-0 --><a href="Item.html">Item</a> item, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
-      <font color="blue">bool</font> CheckAccount( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mobCheck, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> accCheck )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> CheckAosLockdowns( <font color="blue">int</font> need )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> CheckAosStorage( <font color="blue">int</font> need )<br>
       <font color="blue">virtual</font> <font color="blue">bool</font> CheckDecay()<br>
@@ -128,6 +130,7 @@
       <font color="blue">int</font> GetLockdowns()<br>
       <font color="blue">List</font>&lt;<a href="Mobile.html">Mobile</a>&gt; GetMobiles()<br>
       <font color="blue">virtual</font> <font color="blue">int</font> GetNewVendorSystemMaxVendors()<br>
+      <!-- DBG-0 --><a href="DecayLevel.html">DecayLevel</a> GetOldDecayLevel()<br>
       <font color="blue">void</font> GrantAccess( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> targ )<br>
       <font color="blue">bool</font> HasAccess( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
       <font color="blue">bool</font> HasSecureAccess( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="SecureLevel.html">SecureLevel</a> level )<br>
@@ -164,8 +167,10 @@
       <font color="blue">void</font> RemoveFriend( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> targ )<br>
       <font color="blue">void</font> RemoveKeys( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br>
       <font color="blue">void</font> RemoveLocks()<br>
+      <font color="blue">void</font> ResetDynamicDecay()<br>
       <font color="blue">void</font> RestoreRelocatedEntities()<br>
       <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
+      <font color="blue">void</font> SetDynamicDecay( <!-- DBG-0 --><a href="DecayLevel.html">DecayLevel</a> level )<br>
       <font color="blue">void</font> SetLockdown( <!-- DBG-0 --><a href="Item.html">Item</a> i, <font color="blue">bool</font> locked )<br>
       <font color="blue">void</font> SetLockdown( <!-- DBG-0 --><a href="Item.html">Item</a> i, <font color="blue">bool</font> locked, <font color="blue">bool</font> checkContains )<br>
       <font color="blue">void</font> SetSign( <font color="blue">int</font> xoff, <font color="blue">int</font> yoff, <font color="blue">int</font> zoff )<br>

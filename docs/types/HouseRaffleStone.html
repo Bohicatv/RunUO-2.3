@@ -11,13 +11,13 @@
       (<font color="blue">static</font>) <font color="blue">void</font> Initialize()<br>
       (<font color="blue">ctor</font>) HouseRaffleStone()<br>
       (<font color="blue">ctor</font>) HouseRaffleStone( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br>
-      <font color="blue">bool</font> Active( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
-      <!-- DBG-0 --><a href="HouseRaffleState.html">HouseRaffleState</a> CurrentState( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="HouseRaffleState.html">HouseRaffleState</a> CurrentState( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="HouseRaffleDeed.html">HouseRaffleDeed</a> Deed( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">string</font> DefaultName( <font color="blue">get</font>; )<br>
       <font color="blue">bool</font> DisplayWeight( <font color="blue">get</font>; )<br>
       TimeSpan Duration( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">List</font>&lt;<a href="RaffleEntry.html">RaffleEntry</a>&gt; Entries( <font color="blue">get</font>; )<br>
+      <!-- DBG-0 --><a href="HouseRaffleExpireAction.html">HouseRaffleExpireAction</a> ExpireAction( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <font color="blue">bool</font> IsExpired( <font color="blue">get</font>; )<br>
       <!-- DBG-0 --><a href="Rectangle2D.html">Rectangle2D</a> PlotBounds( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
       <!-- DBG-0 --><a href="Map.html">Map</a> PlotFacet( <font color="blue">get</font>; <font color="blue">set</font>; )<br>
@@ -36,6 +36,7 @@
       <font color="blue">bool</font> IsAtIPLimit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> OnDelete()<br>
       <font color="blue">virtual</font> <font color="blue">void</font> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
+      <font color="blue">virtual</font> <font color="blue">void</font> OnSingleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br>
       <font color="blue">void</font> Purchase_Callback( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <font color="blue">bool</font> okay, <font color="blue">object</font> state )<br>
       <font color="blue">virtual</font> <font color="blue">void</font> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br>
       <font color="blue">bool</font> ValidLocation()<br>
