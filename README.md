@@ -20,7 +20,7 @@ This version of RunUO also works very well for people with older, less powerful 
 
 ## Quick Start Guide
 
-1. Run the RunUO.exe file to create some scripts.
+1. Run the RunUO.exe file to compile some scripts.
 2. Open the folder scripts/misc/DataPath.cs.
 3. To open .CS (C#) files, you can use Notepad++.
 4. Edit line 16 and input the directory path where your UO client files are located.
