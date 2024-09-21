@@ -39,7 +39,7 @@ namespace Server.Misc
 		 */
 
 		public static readonly string Address = null;
-		public static readonly string ServerName = "UO Flame Shard";
+		public static readonly string ServerName = "RunUO 2.3 Shard";
 
 		public static readonly bool AutoDetect = true;
 
