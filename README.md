@@ -8,11 +8,12 @@
 
 This version of RunUO 2.3 is running on the .NET 2.0 framework, which is very old.
 Security updates are obviously no longer being sent from Microsoft for .NET 2.0.
-This means running this version of RunUO comes with security risks if you wish to use it at a large scale for public traffic.
+This means, running this version of RunUO comes with security risks. 
+If you wish to use at a large scale, performace might also be lacking for public network traffic.
 
-## Goal
+## Use Case
 
-Updates to this version will be focused on providing some support for the needs of smaller groups.
+Updates to this version will be focused on providing some support for the needs of smaller groups of people.
 Meaning, if you just want to start a server for family or friends, this is going to do the trick.
 
 This version of RunUO also works very well for people with older, less powerful machines looking to host a server.
