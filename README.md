@@ -4,6 +4,14 @@
 [![GitHub stars](https://img.shields.io/github/stars/bohica89/RunUO-2.3?logo=github&style=flat)](https://github.com/bohica89/RunUO-2.3/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/bohica89/RunUO-2.3?logo=github)](https://github.com/bohica89/RunUO-2.3/issues)
 
+## Introduciton
+
+This version of RunUO 2.3 is running on .NET 2.0 framework which is very old.
+Security updates are obviously no longer being sent from Microsfot for .NET 2.0.
+This means, running this version of RunUO comes with security risks if you wish to use at a large scale for public traffic.
+
+Updates to this version will be focused on providing some support for the needs of small groups of players just looking to start a server for their friends to play on.
+
 ## Quick Start Guide
 
 1. Open the folder scripts/misc/DataPath.cs.
