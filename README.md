@@ -20,14 +20,15 @@ This version of RunUO also works very well for people with older, less powerful 
 
 ## Quick Start Guide
 
-1. Open the folder scripts/misc/DataPath.cs.
-2. To open .CS (C#) files, you can use Notepad++.
-3. Edit line 16 and input the directory path where your UO client files are located.
-4. Close the editor.
-5. Click and run RunUO.exe.
-6. Create an account and password. (If you mess up and it skips to password, press Ctrl+C)
-7. Leave the terminal running. (This is the running server/shard service terminal)
-8. You can connect to your shard using the following information: IP: localhost, Port: 2593.
+1. Run the RunUO.exe file to create some scripts.
+2. Open the folder scripts/misc/DataPath.cs.
+3. To open .CS (C#) files, you can use Notepad++.
+4. Edit line 16 and input the directory path where your UO client files are located.
+5. Close the editor.
+6. Click and run RunUO.exe.
+7. Create an account and password. (If you mess up and it skips to password, press Ctrl+C)
+8. Leave the terminal running. (This is the running server/shard service terminal)
+9. You can connect to your shard using the following information: IP: localhost, Port: 2593.
 
 You can use the ClassicUO client to connect to your shard. (https://www.classicuo.eu/)
 
